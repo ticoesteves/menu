@@ -9,6 +9,7 @@
     <meta name="description" content="Site criado em HTML, CSS e JavaScript para divulgar o trabalho do programador Front-end Tico Esteves"/>
     <meta name="keywords" content="Programador front-end, programador, HTML, CSS, JavaScript, WordPress, Criar site, Tico Esteves">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/animate.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Menu Fixo</title>
@@ -32,12 +33,12 @@
                 <li class="nav__mobile--icon">
                     <a href="javascript:MostraMenuMobile()">&#9776;</a>
                 </li>
-                <div id="menu_mobile" class="menu__mobile" style="display: none">
+                <div id="menu_mobile" class="menu__mobile animate__animated" style="display: none">
                     <a href="javascript:MostraMenuMobile()" class="close_menu">&#10005;</a>
                     <ul>
-                        <li><a href="#sectionOne">Sessão 1</a></li>
-                        <li><a href="#sectionTwo">Sessão 2</a></li>
-                        <li><a href="#sectionThree">Sessão 3</a></li>
+                        <li><a onclick="hideMenu();" href="#sectionOne">Sessão 1</a></li>
+                        <li><a onclick="hideMenu();" href="#sectionTwo">Sessão 2</a></li>
+                        <li><a onclick="hideMenu();" href="#sectionThree">Sessão 3</a></li>
                     </ul>
                 </div>
             </div>
